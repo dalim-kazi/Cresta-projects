@@ -1,0 +1,768 @@
+.container-header {
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+.container-header .header-content-section {
+  background: #dbdfea;
+}
+.container-header .header-content-section .header-content {
+  display: flex;
+  width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.container-header .header-content-section .header-content .header-info {
+  display: flex;
+  gap: 31px;
+}
+.container-header .header-content-section .header-content .header-info .info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  list-style-type: none;
+  padding-top: 8px;
+  padding-left: 0;
+}
+.container-header .header-content-section .header-content .header-info .info .fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  letter-spacing: _letter-spacing;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-header .header-content-section .header-content .header-info .info .info-para {
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.container-header .header-content-section .header-content .header-icon ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-top: 8px;
+  list-style-type: none;
+}
+.container-header .header-content-section .header-content .header-icon ul li .fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: _background;
+  letter-spacing: _letter-spacing;
+  color: var(--900, #05092B);
+}
+.container-header .header-nav-section .header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 37px;
+}
+.container-header .header-nav-section .header-nav .nav-icon-content {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+}
+.container-header .header-nav-section .header-nav .nav-icon-content img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.container-header .header-nav-section .header-nav .nav-icon-content .nav-content-name {
+  font-family: "Space Grotesk";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: _line-height;
+  background: _background;
+  letter-spacing: -1.48px;
+  color: var(--900, #05092B);
+  font-feature-settings: "clig" off, "liga" off;
+}
+.container-header .header-nav-section .header-nav .nav-ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+}
+.container-header .header-nav-section .header-nav .nav-ul li {
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: _line-height;
+  background: _background;
+  letter-spacing: _letter-spacing;
+  color: var(--900, #05092B);
+  font-feature-settings: "clig" off, "liga" off;
+  cursor: pointer;
+  position: relative;
+}
+.container-header .header-nav-section .header-nav .nav-ul li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #05092B;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container-header .header-nav-section .header-nav .nav-ul li:hover::after {
+  width: 100%;
+}
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+.container-header .header-nav-section .header-nav .nav-ul li:hover {
+  animation: bounceAnimation 0.5s ease;
+}
+.container-header .header-nav-section .header-nav .btn-Book-Now {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: var(--White, #FFF);
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  letter-spacing: _letter-spacing;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  transition: background 0.5s ease;
+  border: 2px solid white;
+}
+.container-header .header-nav-section .header-nav .btn-Book-Now:hover {
+  background: #FFF;
+  color: #05092B;
+  border: 2px solid #05092B;
+}
+
+.banner-section {
+  position: relative;
+  background: url("../../image/Rectangle 3096.jpg") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 80px;
+  margin-top: 37px;
+  height: 350px;
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.banner-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 350px;
+  height: 100%;
+  background-color: #05092B;
+  opacity: 0.5;
+}
+.banner-section .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 255px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.banner-section .banner-content .Service {
+  color: var(--White, #FFFFFF);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+  background: _background;
+  letter-spacing: -1.48px;
+}
+.banner-section .banner-content .home-service {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  background: _background;
+  letter-spacing: _letter-spacing;
+  text-align: center;
+  margin-top: 10px;
+}
+.banner-section .banner-content .home-service .fa-solid {
+  color: var(--White, #FFF);
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background: _background;
+  letter-spacing: _letter-spacing;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.banner-section .banner-content .home-service .home {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.banner-section .banner-content::before {
+  content: "";
+  color: #FFF;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.banner-section .banner-content::after {
+  content: "";
+  color: #FFF;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.card-container .row .card-body .card-img {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+}
+.card-container .row .card-body .card-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 100%;
+  transition: all 0.4s ease;
+  background: linear-gradient(91deg, #351EE0 0%, #3F74EF 100%);
+}
+.card-container .row .card-body:hover .card-img::before {
+  opacity: 1;
+}
+.card-container .row .card-body:hover .card-img::before .img {
+  filter: brightness(1) invert(1);
+}
+.card-container .row .card-body ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  justify-items: center;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  list-style-type: none;
+  padding-top: 37px;
+  margin: 10px;
+}
+.card-container .row .card-body ul li {
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-container .row .card-body ul li .card-img {
+  background: #F9F9F9;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.card-container .row .card-body ul li .card-img img {
+  width: 132px;
+  height: 132px;
+  padding: 25px;
+  flex-shrink: 0;
+}
+.card-container .row .card-body ul li .card-title {
+  margin-top: 20px;
+  color: var(--900, #05092B);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-decoration: none;
+  transition: text-decoration 0.5s ease-out;
+}
+.card-container .row .card-body ul li:hover .card-title {
+  text-decoration: underline;
+  color: #351EE0;
+}
+.card-container .row .card-body ul li .card-para {
+  color: var(--800, #737373);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  background: _background;
+  letter-spacing: -0.36px;
+  margin-top: 20px;
+}
+
+.Stay-connected-section {
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.Stay-connected-section .stay-connected {
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  height: 346px;
+  top: 110px;
+  z-index: 10;
+}
+.Stay-connected-section .stay-connected .Stay-connected-img {
+  margin-left: -40px;
+}
+.Stay-connected-section .stay-connected .Stay-connected-img img {
+  margin-top: -88px;
+  width: 534px;
+  height: 434px;
+  flex-shrink: 0;
+}
+.Stay-connected-section .stay-connected .Stay-connected-content {
+  margin-left: 51px;
+}
+.Stay-connected-section .stay-connected .Stay-connected-content .Stay-connected-title {
+  margin-top: 60px;
+  color: var(--900, #05092B);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  background: _background;
+  letter-spacing: -1.48px;
+  text-transform: capitalize;
+}
+.Stay-connected-section .stay-connected .Stay-connected-content .Stay-connected-title .connected {
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  background: _background;
+  letter-spacing: -1.48px;
+  text-transform: capitalize;
+}
+.Stay-connected-section .stay-connected .Stay-connected-content .Stay-connected-button {
+  display: inline-flex;
+  height: 60px;
+  padding: 20px 30px;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: var(--900, #05092B);
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.Stay-connected-section .stay-connected .Stay-connected-content:hover .Stay-connected-button {
+  border: 2px solid #351EE0;
+}
+
+.footer-section {
+  position: relative;
+  height: 560px;
+  max-width: 1520px;
+  margin: 0 auto;
+  background: #05092B;
+}
+.footer-section .left-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: 100%;
+  opacity: 0.8;
+}
+.footer-section .right-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 295px;
+  height: 100%;
+  opacity: 0.8;
+}
+.footer-section .nav-container-section {
+  padding-top: 180px;
+  width: 1140px;
+  margin: 0 auto;
+}
+.footer-section .nav-container-section .nav-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #312e34;
+  gap: 50px;
+  padding-bottom: 10px;
+}
+.footer-section .nav-container-section .nav-container .nav-name .nav-image {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.footer-section .nav-container-section .nav-container .nav-name .nav-image img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.footer-section .nav-container-section .nav-container .nav-name .nav-image .name {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: _background;
+  letter-spacing: -1.48px;
+  color: var(--White, #FFF);
+}
+.footer-section .nav-container-section .nav-container .nav-name .nav-para {
+  color: var(--White, #b2b2b2);
+  font-feature-settings: "clig" off, "liga" off;
+  margin-top: 30px;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  background: _background;
+  letter-spacing: -0.36px;
+  opacity: 0.8;
+}
+.footer-section .nav-container-section .nav-container .nav-name .FollowUs {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  margin-top: 20px;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+  padding-left: 0;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li .fa-facebook-f {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--White, #FFF);
+  opacity: 0.9;
+  color: var(--White, #FFF);
+  font-family: "Font Awesome 6 Brands";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li:hover .fa-facebook-f {
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li .fa-twitter {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--White, #FFF);
+  opacity: 0.9;
+  color: var(--White, #FFF);
+  font-family: "Font Awesome 6 Brands";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li:hover .fa-twitter {
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li .fa-linkedin {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--White, #FFF);
+  opacity: 0.9;
+  color: var(--White, #FFF);
+  font-family: "Font Awesome 6 Brands";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li:hover .fa-linkedin {
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li .fa-pinterest-p {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--White, #FFF);
+  opacity: 0.9;
+  color: var(--White, #FFF);
+  font-family: "Font Awesome 6 Brands";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.footer-section .nav-container-section .nav-container .nav-name ul li:hover .fa-pinterest-p {
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul {
+  list-style-type: none;
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul .title {
+  color: var(--White, #FFF);
+  margin-bottom: 30px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  background: _background;
+  letter-spacing: _letter-spacing;
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul .footer-li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 20px;
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul .footer-li .footer-icon {
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+  letter-spacing: _letter-spacing;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul .footer-li .li-para {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  margin: 0;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  background: _background;
+  letter-spacing: -0.36px;
+  opacity: 0.7;
+  color: var(--White, #FFF);
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul .li-para-2 {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  margin: 0;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  background: _background;
+  letter-spacing: -0.36px;
+  opacity: 0.8;
+  color: var(--White, #FFF);
+  opacity: 0.7;
+}
+.footer-section .nav-container-section .nav-container .footer-content-list .footer-ul .li-para-3 {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  margin: 0;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  background: _background;
+  letter-spacing: -0.36px;
+  color: var(--White, #FFF);
+}
+.footer-section .nav-container-section .Rights-Reserved {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-section .nav-container-section .Rights-Reserved .Reserved {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  background: _background;
+  letter-spacing: -0.36px;
+  opacity: 0.6;
+}
+.footer-section .nav-container-section .Rights-Reserved ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 22px;
+}
+.footer-section .nav-container-section .Rights-Reserved ul li {
+  color: var(--White, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  background: _background;
+  letter-spacing: -0.36px;
+  opacity: 0.6;
+}
+.footer-section .bg1 {
+  background-image: url("../../image/icon/_800X800.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 500px;
+  opacity: 0.7;
+}
+.footer-section .bg2 {
+  background-image: url("../../image/icon/_800X800 -1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 500px;
+  opacity: 0.7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

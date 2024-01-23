@@ -1,0 +1,250 @@
+@use "../utlis/iconStyle" as index;
+@use "../utlis//container-fluid" as container-fluid;
+@use "../utlis/container" as container;
+
+@mixin icon-style {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--White, #FFF);
+    opacity: 0.9;
+    color: var(--White, #FFF);
+    @include index.icon-style("Font Awesome 6 Brands", 14px, normal, 400, normal, _background, _letter-spacing);
+}
+
+@mixin icon-hover {
+    background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.footer-section {
+    position: relative;
+    height: 560px;
+    max-width: map-get($map: container-fluid.$container-fluid-max-widths, $key: xxl);
+    margin: 0 auto;
+    .left-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 295px;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .right-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 295px;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .nav-container-section {
+        padding-top: 180px;
+        width: map-get($map: container.$container-max-widths, $key: xl);
+        margin: 0 auto;
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #312e34;
+            gap: 50px;
+            padding-bottom: 10px;
+
+            .nav-name {
+
+                .nav-image {
+                    display: flex;
+                    align-items: start;
+                    gap: 10px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        flex-shrink: 0;
+                    }
+
+                    .name {
+                        color: var(--White, #FFF);
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        @include index.icon-style("Space Grotesk", 30px, normal, 700, normal, _background, -1.48px);
+                        color: var(--White, #FFF);
+                    }
+                }
+
+                .nav-para {
+                    color: var(--White, #b2b2b2);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    margin-top: 30px;
+                    @include index.icon-style("Space Grotesk", 18px, normal, 400, 28px, _background, -0.36px);
+                    opacity: 0.8;
+                }
+
+                .FollowUs {
+                    color: var(--White, #FFF);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    margin-top: 20px;
+                    @include index.icon-style("Space Grotesk", 18px, normal, 700, 30px, _background, _letter-spacing);
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style-type: none;
+                    gap: 10px;
+                    padding-left: 0;
+
+                    li {
+                        .fa-facebook-f {
+                            @include icon-style;
+
+                        }
+
+                        &:hover .fa-facebook-f {
+                            @include icon-hover()
+                        }
+
+                        .fa-twitter {
+                            @include icon-style()
+                        }
+                        &:hover .fa-twitter{
+                            @include icon-hover()
+                        }
+                        .fa-linkedin{
+                            @include icon-style()
+                        }
+                        &:hover .fa-linkedin{
+                            @include icon-hover()
+                        }
+                        .fa-pinterest-p{
+                            @include icon-style()
+                        }
+                        &:hover .fa-pinterest-p{
+                            @include icon-hover()
+                        }
+
+                    }
+
+
+
+                }
+
+            }
+
+            .footer-content-list {
+                .footer-ul {
+                    list-style-type: none;
+
+                    .title {
+                        color: var(--White, #FFF);
+                        margin-bottom: 30px;
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        @include index.icon-style("Space Grotesk", 22px, normal, 700, 36px, _background, _letter-spacing);
+                    }
+
+                    .footer-li {
+                        display: flex;
+                        align-items: center;
+                        gap: 13px;
+                        margin-bottom: 20px;
+
+                        .footer-icon {
+                            @include index.icon-style("Font Awesome 6 Free", 14px, normal, 900, normal, var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%)), _letter-spacing);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+
+                        .li-para {
+                            color: var(--White, #FFF);
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            margin: 0;
+                            @include index.icon-style("Space Grotesk", 18px, normal, 400, 28px, _background, -0.36px);
+                            opacity: 0.7;
+                            color: var(--White, #FFF);
+                        }
+
+                    }
+
+                    .li-para-2 {
+                        color: var(--White, #FFF);
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        margin: 0;
+                        @include index.icon-style("Space Grotesk", 18px, normal, 400, 30px, _background, -0.36px);
+                        opacity: 0.8;
+                        color: var(--White, #FFF);
+                        opacity: 0.7;
+
+                    }
+
+                    .li-para-3 {
+                        color: var(--White, #FFF);
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        margin: 0;
+                        @include index.icon-style("Space Grotesk", 20px, normal, 700, 30px, _background, -0.36px);
+                        // opacity: 0.6;
+                        color: var(--White, #FFF);
+                    }
+                }
+            }
+        }
+
+        .Rights-Reserved {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .Reserved {
+                color: var(--White, #FFF);
+                font-feature-settings: 'clig' off, 'liga' off;
+                @include index.icon-style("Space Grotesk", 18px, normal, 400, 26px, _background, -0.36px);
+                opacity: 0.6;
+            }
+
+            ul {
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                gap: 22px;
+
+                li {
+                    color: var(--White, #FFF);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    @include index.icon-style("Space Grotesk", 18px, normal, 400, 26px, _background, -0.36px);
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    .bg1 {
+        background-image: url("../../image/icon/_800X800.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 500px;
+        opacity: 0.7;
+    }
+
+    .bg2 {
+        background-image: url("../../image/icon/_800X800\ -1.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 500px;
+        opacity: 0.7;
+    }
+
+    background: #05092B;
+
+}

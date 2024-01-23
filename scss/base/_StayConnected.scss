@@ -1,0 +1,77 @@
+@use "../utlis/iconStyle" as index;
+@use "../utlis/container" as container;
+
+.Stay-connected-section {
+    width: map-get($map: container.$container-max-widths, $key: xl);
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .stay-connected {
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 40px;
+        position: relative;
+        height: 346px;
+        top: 110px;
+        z-index: 10;
+
+        .Stay-connected-img {
+
+            margin-left: -40px;
+
+            img {
+                margin-top: -88px;
+                width: 534px;
+                height: 434px;
+                flex-shrink: 0;
+            }
+        }
+
+
+        .Stay-connected-content {
+            margin-left: 51px;
+
+            .Stay-connected-title {
+                margin-top: 60px;
+                color: var(--900, #05092B);
+                font-feature-settings: 'clig' off, 'liga' off;
+                @include index.icon-style("Space Grotesk", 50px, normal, 700, 68px, _background, -1.48px);
+                text-transform: capitalize;
+
+                .connected {
+                    background: var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    @include index.icon-style("Space Grotesk", 50px, normal, 700, 68px, _background, -1.48px);
+                    text-transform: capitalize;
+                }
+            }
+
+            .Stay-connected-button {
+                display: inline-flex;
+                height: 60px;
+                padding: 20px 30px;
+                justify-content: center;
+                margin-top: 30px;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+                border-radius: 5px;
+                border: 2px solid black;
+                color: var(--900, #05092B);
+                @include index.icon-style("Space Grotesk", 18px, normal, 700, 30px, _background,_letter-spacing);
+            }
+
+            &:hover .Stay-connected-button {
+                border: 2px solid #351EE0;
+            }
+        }
+    }
+
+}

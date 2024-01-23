@@ -1,0 +1,9 @@
+@mixin icon-style ($font-family, $font-size, $font-style, $font-weight, $line-height, $background,$letter-spacing) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    background: $background;
+    letter-spacing:$letter-spacing;
+}

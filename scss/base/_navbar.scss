@@ -1,0 +1,167 @@
+@use "../utlis/index" as index;
+@use "../utlis/container" as container;
+@use "../utlis//container-fluid" as container-fluid;
+.container-header {
+    max-width:  map-get($map: container-fluid.$container-fluid-max-widths, $key: xxl);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+    .header-content-section {
+        background: #dbdfea;
+
+        .header-content {
+            display: flex;
+            width: map-get($map: container.$container-max-widths, $key:xl );
+            margin: 0 auto;
+            justify-content: space-between;
+
+            .header-info {
+                display: flex;
+                gap: 31px;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                    list-style-type: none;
+                    padding-top: 8px;
+                    padding-left: 0;
+
+                    .fa-solid {
+                        @include index.icon-style("Font Awesome 6 Free", 16px, normal, 900, normal, var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%)), _letter-spacing);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                    }
+
+                    .info-para {
+                        @include index.icon-style("Space Grotesk", 16px, normal, 400, 28px, _background, _letter-spacing);
+                    }
+                }
+            }
+
+            .header-icon {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+                    padding-top: 8px;
+                    list-style-type: none;
+
+                    li {
+                        .fa-brands {
+                            @include index.icon-style("Font Awesome 6 Brands", 15px, normal, 400, normal, _background, _letter-spacing);
+                            color: var(--900, #05092B);
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+    .header-nav-section {
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            width: map-get($map: container.$container-max-widths, $key:xl );
+            margin: 0 auto;
+            margin-top: 37px;
+            .nav-icon-content {
+                display: flex;
+                align-items: start;
+                gap: 5px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    flex-shrink: 0;
+                }
+
+                .nav-content-name {
+                    @include index.icon-style("Space Grotesk", 30px, normal, 700, _line-height, _background, -1.48px);
+                    color: var(--900, #05092B);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                }
+            }
+
+            .nav-ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                gap: 25px;
+
+                li {
+                    @include index.icon-style("Space Grotesk", 18px, normal, 400, _line-height, _background, _letter-spacing);
+                    color: var(--900, #05092B);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    cursor: pointer;
+                    position: relative;
+                }
+
+                li::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: #05092B;
+                    transition: width 0.3s ease;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                li:hover::after {
+                    width: 100%;
+                }
+
+                @keyframes bounceAnimation {
+
+                    0%,
+                    20%,
+                    50%,
+                    80%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    40% {
+                        transform: translateY(-10px);
+                    }
+
+                    60% {
+                        transform: translateY(-5px);
+                    }
+                }
+
+                li:hover {
+                    animation: bounceAnimation 0.5s ease;
+                }
+            }
+
+            .btn-Book-Now {
+                padding: 10px 40px;
+                border-radius: 5px;
+                border: none;
+                color: var(--White, #FFF);
+                @include index.icon-style("Space Grotesk", 18px, normal, 700, 30px, var(--P, linear-gradient(91deg, #351EE0 0%, #3F74EF 100%)), _letter-spacing);
+                font-family: "Space Grotesk";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                transition: background 0.5s ease;
+                border: 2px solid white;
+            }
+
+            .btn-Book-Now:hover {
+                background: #FFF;
+                color: #05092B;
+                border: 2px solid #05092B;
+            }
+        }
+
+    }
+}
